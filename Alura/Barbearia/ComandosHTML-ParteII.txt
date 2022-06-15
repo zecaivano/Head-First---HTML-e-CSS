@@ -1,0 +1,159 @@
+HTML
+<br> 	Pula linha
+<button>	Cria um botão para clicar
+<canvas width = "600" height="400"></canvas> Abre uma tela para desenhar
+
+<h1>Texto </h1>	Heading maior
+<p> 		Parágrafo
+<strong> Texto </strong>	Destaca o conteúdo (negrito)
+<em> Texto </em>		Dá ênfase ao conteúdo (itálico)
+<!DOCTYPE html>		Deve ir no início de cada página para mostrar que é a última versão do html
+<html> Mundo HTML </html>	Define o que está no mundo HTML
+<html lang ="pt-br">		Informa o idioma da página
+Tags de conteúdo precisam ser fechadas, tag de informação não precisa.
+<meta charset="UTF-8">		Permite o uso de acentos, ç etc
+<title>Título</title>		Informa o título que aparecerá na aba, sem ter que mudar o nome do arquivo.
+<head></head>		Informo as informações que o navegador precisa saber, não o usuário.
+<body></body>		Conteúdo que será apresentado ao usuário.
+<p style="font-size: 20px"> O conteúdo do parágrafo marcado p terá tamanho 20 pixels. O padrão do html é 16.
+<h1 style="text-align: center;">	Alinha o conteúdo de h1 com o centro da página
+		
+
+<style>
+	p{
+		text-align: center;
+	}
+			
+</style>			Se for declarado no head, alinha todos os parágrafos a página com o centro
+
+<link rel="stylesheet" href="style.css">	Link é a ligação de um arquivo para outro, rel é o relacionamento do link com a propriedade stylesheet está no href (endereço do arquivo de referência)
+
+style="background: #CCCCCC"	Coloca o fundo cinza. Cor no formato Hexa Decimal dentro do RGB
+
+No arquivo css
+strong{
+	color:red;
+}			// Tudo que estiver com a tag strong ficará vermelho;
+
+3 formas de representar as cores
+#FF0000	vermelho
+red		vermelho
+rgb(255,0,0) vermelho
+
+<img src="banner.jpg">	Carrega imagem. src é abreviação de source.
+
+<p id = "missao">		Identifica um elemento para editar somente ele no arquivo CSS (Usa-se o #)
+<ul class = "beneficios">	Cria classe que é chamada com . no CSS
+
+border: 10px;		Borda no texto
+padding-top: 20px;	Espaçamento interno superior da borda
+margin-left: 40px;	Espaçamento externo esquerdo da borda/parágrafo
+
+<ul>	Unordered list
+<ol>	Ordered list
+<li>	Inlcui elemento na lista
+<div>	Cria uma seção. Divide a página em seções.
+
+display:  inline-block;	Quando está em bloco, ocupa toda a linha, quando está inline não da pra mexer nas bordas. Inline-block mescla os dois. Alinhamento por baixo.
+vertical-align: top	Alinhamento vertical por cima.
+<header>	Divisão do cabeçalho
+		
+Parte 2-
+<a href="index.html">		Anchor - leva a um link index
+display:inline			Consigo colocar elementos um ao lado do outro. Exibe no tamanho do conteúdo dele.
+display:inline-block		Lista é elemento em bloco, ou seja, ocupa 100% da largura, cada um dos elementos da lista também é bloco. Exibe a largura do conteúdo dele, mas podemos alterar o tamanho.
+<nav>			Menu de navegação, tag comum para isso
+text-transform: uppercase 	Transforma o texto em maiúsculo
+font-weight: bold		Passa pra negrito
+font-size: 22px
+text-decoration: none	Tira o sublinhado do link
+margin: 0 0 0 15		Margem superior, direita, inferior, esquerda
+
+position: static;
+position: relative;
+position: absolute;	Posições do elemento na tela. O estático o ponto inicial fica travado. O relativo é em relação ao ponto inicial e o absoluta a gente altera o top: 0			ponto inicial
+right: 0			Nessas coordenadas, o conteúdo está colado no alto e na direita, independente de blocos, figuras e cabeçalhos.
+
+Exemplo de caixa centralizada
+header{
+	background: #BBBBBB;
+	padding: 20px 0;
+}
+
+.caixa{
+	position: relative;
+	width: 940px;
+	margin: 0 auto;
+}
+
+<main>	Código principal, após o cabeçalho. Tipo específico de div
+
+box-sizing: border-box 	Com essa instrução, a largura informada em porcentagem é definitivo, e um eventual padding não é adicionado à largura.
+border	A borda tem três aspectos mais importantes, o tamanho, o tipo e a cor
+	border-color: #000000;
+	border-width: 2px;
+	border-style: solid;	Há estilo dashed, dotted...
+
+border: 2px solid #000000; 	Essa declaração é equivalente à superior
+nav a:hover		Quando o mouse estiver por cima dos links dentro do menu de navegação faz o que eu pedir
+nav a: active	Quando o mouse clicar eu executo a ação
+<footer>	Rodapé
+background: url(bg.jpg);	Coloco minha imagem selecionada como background, repetida várias vezes
+
+Parte III
+<form>	Formulário
+<label>	Sempre acompanha o input
+<input>	Pede entrada para o usuário
+<label for="nomesobrenome">Nome e sobrenome</label>
+<input //type="text" id="nomesobrenome">
+
+<input type="submit">					Aparece botão com texto enviar
+<label for="mensagem">Mensagem</label>	
+<textarea cols="70" rows="10" id="mensagem"></textarea>	Faz caixa de mensagem
+
+<label for="radio-email">Email</label>
+<input type="radio" value="email" id="radio-email">	Caixa de seleção de e-mail
+<input type="checkbox" name="">Gostaria de receber nossas novidades por email?</label>	Cria um checkbox
+
+<select>
+	<option>Manhã</option>
+	<option>Tarde</option>
+	<option>Noite</option>
+</select>
+
+required	Item obrigatório no formulário
+placeholder "seuemail@dominio.com"
+
+fieldset	É uma divisão melhor que div para campos de seleção
+Legend	É o parágrafo do fieldset
+alt		Alternativa à imagem, para deficientes visuais ou quando a imagem não carrega
+transition	Faz a transição da cor de fundo (por exemplo) não ser instantânea
+
+div é visual, section todo o conteúdo faz parte de uma sessão
+font-size: 2em;	em é o tamanho base
+float: left		Imagem fica flutuante à esquerda
+clear: left		Limpa o float por exemplo
+
+.itens:first-child {
+	font-weight: bold;	Primeiro item da lista fica em negrito
+
+main > p	No css, esta é uma seleção que não precisa usar classe, só vai selecionar os parágrafos filhos direto do main
+img + p 	Elemento p parágrafo é o próxumo irmão da imagem
+img ~ p	Todos os p irmãos da imagem
+main p:not(#missao)	Todos os p que não estão marcados pelo identificador.	
+
+width: calc(40% - 20px);	Calcula a largura pra mim.
+box-shadow: 10px 10px 10px 0 #000000;	X Y blur espalhamento cor
+inset		Sombra interna, X e Y são zeros
+text-shadow
+
+
+
+
+
+
+
+
+
+
+

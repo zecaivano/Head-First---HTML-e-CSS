@@ -1,0 +1,40 @@
+<a href="drinks.html> Bebidas </a>	Cria um link em Bebidas para a página drinks.
+<a href="http://wickedlysmart.com/buzz#Coffee">	Cria um link para a url, exibindo direto no ID Coffee
+<a href="link" title="Read all about caffeine on the Buzz">	Cria um título para o link que aparece após o mouse ficar 1seg em cima.
+<a target="_blank" href="drinks.html>	Abre uma nova janela ao clicar no link, ao invés de sobrecarregar a página atual. Usado no mesmo <> do atributo <a> e do link href
+<img src="images/figura1.jpg>		Carrega uma imagem. Elemento vazio.
+<style type="text/css"></style>
+
+em bloco:		São sempre exibidos como se tivesse uma quebra de linha antes e depois.
+em linha:		Aparecem dentro do fluxo de texto na página.
+
+<body></body>	Coloco toda a estrutura que é exibida na página aqui dentro. É carregado após o head.
+<blockquote></blockquote> Faz citações mais longas que o <q>. Para livros e referências. Um parágrafo próprio. Elemento in bloco.
+<code></code>	Exibe um código de computador.
+<head></head>	Coloco o title aqui dentro
+<strong></strong>	Negrito
+<title></title>	Cria o nome da página.
+<time></time>	Representa que o elemento é um tempo. Data e hora por exemplo.
+
+
+<a></a>		Faz âncora, ou seja, cria um link. Em linha.
+<alt>			Descrição significativa da imagem.
+<br>			Break line. Quebra de linha. Elemento vazio (não possui fechamento).
+<dl></dl>		Definition list. Acompanhada de <dd> e <dt>
+<dt></dt>		Definition title
+<dd></dd>		Definition description
+<em></em>		Coloca ênfase no texto (itálico). Em linha.
+<h1></h1>		Cria um heading principal. Em bloco.
+<h2></h2>		Cria um heading secundário. Em bloco.
+<li></li>		List item. Itens da lista. Em bloco.
+<ol></ol>		Ordered list. Lista ordenada com números. Em bloco
+<p></p>		Parágrafo. Em bloco.
+<pre></pre>		Browser mostra o texto exatamente como foi digitado, inclusive os Returns.
+<q></q>		Quote, Faz citação(coloca entre aspas). Elemento em linha.
+<ul></ul>		Unordered list. Em bloco.
+
+&lt;			Simboliza < na estrutura do html
+&gt;			Simboliza > na estrutura do html
+&lt;html&gt;	<html>
+&amp;			&
+lista completa:	w3 /tags/ref_entities.asp		

@@ -1,51 +1,68 @@
-<html>
+<!DOCTYPE html>
+<html lang="pt-br">
     <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
         <title>Minha Homepage</title>
-        <style type="text/css">
-            body {
-                background-color: #000008;
-                margin-left: 20%;
-                margin-right: 20%;
-                border: 2px dotted black;
-                padding: 10px 10px 10px 10px;
-                font-family: cursive;
-                color: rgb(88, 216, 88);
-            }
-        </style>
+        <link href="reset.css" rel="stylesheet">
+        <link href="style.css" rel="stylesheet">
     </head>
     <body>
-        <h1>Quem sou eu</h1>
-        <p>
+    <header class="cabecalhoPrincipal">
+        <div class="container__cabecalho">
+            <h1 class="cabecalhoPrincipal-titulo">
+                <a href="#">José Roberto</a>
+            </h1>
+
+            <nav class="cabecalhoPrincipal-nav">
+                <a class="cabecalhoPrincipal-nav-link" href="#">Home</a>
+                <!-- <a class="cabecalhoPrincipal-nav-link" href="#">Cursos</a> -->
+                <a class="cabecalhoPrincipal-nav-link" href="#">Sobre mim</a>
+                <a class="cabecalhoPrincipal-nav-link" href="#">Contato</a>
+                <!-- <a class="cabecalhoPrincipal-nav-link cabecalhoPrincipal-nav-link-app" href="#">Nosso APP</a> -->
+            </nav>
+        </div>
+
+    </header>
+    <section class="banner">
+        <div class="banner__imagem"></div>
+        <!-- <h2 class="banner__titulo"></h2> -->
+    </section>
+
+        <h1 class="quemsou">QUEM SOU EU</h1>
+        <p class="quemsou__descricao">
             <img src="imagens/perfil-miniatura.jpeg" alt="foto de perfil">
             <br>
-            Bancario engenheiro querendo virar desenvolvedor. Pai de uma menina linda e marido de uma garota encantavel. Apaixonado por matematica, raciocinio logico, jogos de tabuleiro e animes. Disciplina preferida na faculdade: Eletronica Digital. Linguagem de programacao preferida: Assembly. Prata MG
+            <!-- Bancário engenheiro querendo virar desenvolvedor. Pai de uma menina linda e marido de uma garota encantadora. Apaixonado por matemática, raciocínio lógico, jogos de tabuleiro e animes. Disciplina preferida na faculdade: Eletrônica Digital. Linguagem de programação preferida: Assembly. Prata MG -->
         </p>
-
-        <h1>Meus Websites</h1>
-        <p>Websites desenvolvidos que vao crescendo em ordem de complexidade, de acordo com a evolucao do meu aprendizado. Os primeiros sao bem basicoes.</p>
-
-        <h2> <a href="01-Comece_a_entender_o_HTML/index.html"> Starbuzz Coffee </a></h2>
-        <p>Capitulo 1: Comece a entender o HTML - A linguagem da Web</p>
-
-        <h2><a href="02-Va_alem_com_o_hipertexto/lounge.html"> Head First Lounge </a></h2>
-        <p>Capitulo 2: Va alem com o hipertexto - Conheça o "HT" do HTML </p>
-
-        <h2><a href="03-Construcao_de_blocos/diario.html">My Trip Around the USA on a Segway</a> </h2>
-        <p>Capitulo 3: Construcao de blocos - Construcao de Paginas Web</p>
-
-        <h2>Conecte-se</h2>
-        <p>Capitulo 4: Conecte-se - Hospedando meu primeiro site - Uma viagem a Weblandia. Nesse capitulo hospedei meu primeiro site, portanto não houve atividade.</p>
-
-        <h2><a href="05-Adicione_imagens/index.html">myPod</a></h2>
-        <p>Capitulo 5: Adicione imagens a suas paginas </p>
-
-        <h2><a href="Alura/Barbearia/index.html"> Barbearia Alura </a> </h2>
-        <p>Minha primeira pagina Web</p>
-
-        <h2><a href="Alura/Apeperia/index.html"> Apeperia </a> </h2>
-        <p>Pagina web pensada totalmente na acessibilidade</p>
-
-        <h2><a href="Alura/Fruta_e_Fruto/index.html"> Fruta e Fruto </a> </h2>
-        <p>Pagina com o CSS todo estruturado e design bem responsivo</p>
+    	<main class="conteudoPrincipal">
+            <div class="container">
+                <h2 class="subtitulo">Meus Websites</h2>
+                <!-- <p>Websites desenvolvidos que vão crescendo em ordem de complexidade, de acordo com a evolução do meu aprendizado. Os primeiros são bem basicões.</p> -->
+    
+                <nav>
+                    <ul class="conteudoPrincipal-sites">
+                        <li class="conteudoPrincipal-sites-link"><a href="01-Comece_a_entender_o_HTML/index.html"> <img src="imagens/cafe.jpg" alt="Cafe Starbuzz" class="conteudoPrincipal__imagens"></a></li>
+                        <li class="conteudoPrincipal-sites-link"><a href="02-Va_alem_com_o_hipertexto/lounge.html"><img src="imagens/drinks.gif" alt="Drinks" class="conteudoPrincipal__imagens"> </a></li>
+                        <li class="conteudoPrincipal-sites-link"><a href="03-Construcao_de_blocos/diario.html"><img src="imagens/segway1.jpg" alt="Segway" class="conteudoPrincipal__imagens"></a></li>
+                        <li class="conteudoPrincipal-sites-link"><a href="05-Adicione_imagens/index.html"><img src="imagens/mypod.png" alt="myPod" class="conteudoPrincipal__imagens"></a></li>
+                        <li class="conteudoPrincipal-sites-link"><a href="Alura/AluraMidi/index.html"><img src="imagens/aluramidi-mini.jpg" alt="alura midi" class="conteudoPrincipal__imagens"></a></li>
+                        <li class="conteudoPrincipal-sites-link"><a href="Alura/Apeperia/index.html"> <img src="imagens/logo-apeperia.svg" alt="Apeperia" class="conteudoPrincipal__imagens"> </a></li>
+                        <li class="conteudoPrincipal-sites-link"><a href="Alura/Fruta_e_Fruto/index.html"> <img src="imagens/frutaefruto.jpg" alt="fruta e fruto" class="conteudoPrincipal__imagens"></a></li>
+                        <li class="conteudoPrincipal-sites-link"><a href="Alura/Alurinha/index.html"> <img src="imagens/alura.svg" alt="Alura" class="conteudoPrincipal__imagens"></a></li>
+                         <li class="conteudoPrincipal-sites-link"><a href="Cokero/index.html"> <img src="imagens/cokero.jpg" alt="Carvão Cokero" class="conteudoPrincipal__imagens"></a></li>
+                         <li class="conteudoPrincipal-sites-link"><a href="Alura/Alura Store/index.html"><img src="imagens/fortnite.jpg" alt="Fortnite" class="conteudoPrincipal__imagens"></a></li>
+                        <li class="conteudoPrincipal-sites-link"><a href="Alura/Barbearia/index.html"><img src="imagens/logo-branco.png" alt="Barbearia Alura" class="conteudoPrincipal__imagens"> </a></li>
+                        <!-- <li class="conteudoPrincipal-sites-link"><a href="#">Redes de computadores</a></li>
+                        <li class="conteudoPrincipal-sites-link"><a href="#">MySQL</a></li>
+                        <li class="conteudoPrincipal-sites-link"><a href="#">MariaDB</a></li>
+                        <li class="conteudoPrincipal-sites-link"><a href="#">Postegres</a></li>
+                        <li class="conteudoPrincipal-sites-link"><a href="#">Lógica de programação</a></li>
+                        <li class="conteudoPrincipal-sites-link"><a href="#">Lógica de programação</a></li>
+                        <li class="conteudoPrincipal-sites-link"><a href="#">Lógica de programação</a></li> --> -->
+                    </ul>
+                </nav>
+            </div>
+        </main>
     </body>
 </html>

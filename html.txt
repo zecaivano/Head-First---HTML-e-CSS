@@ -15,6 +15,7 @@ em linha:		Aparecem dentro do fluxo de texto na página.
 <strong></strong>	Negrito
 <title></title>	Cria o nome da página.
 <time></time>	Representa que o elemento é um tempo. Data e hora por exemplo.
+<link rel="stylesheet href=style.css>	Importa um arquivo css
 
 
 <a></a>		Faz âncora, ou seja, cria um link. Em linha.
@@ -37,4 +38,19 @@ em linha:		Aparecem dentro do fluxo de texto na página.
 &gt;			Simboliza > na estrutura do html
 &lt;html&gt;	<html>
 &amp;			&
-lista completa:	w3 /tags/ref_entities.asp		
+lista completa:	w3 /tags/ref_entities.asp
+
+CSS
+
+background-color:	Cor do fundo
+border-bottom: 1 px solid black	Cria uma linha preta embaixo que vai até o final direito da página
+color:		Cor do texto
+font-family: sans-serif		Estilo da fonte
+font-size: 14px;	Tamanho da fonte
+font-weight: bold;	ligther, normal, bolder...
+text-decoration:	underline	overline, none, line-through
+
+@font-face {			Importando fontes.
+    font-family: "Emblema One";
+    src: url("http://..");
+}

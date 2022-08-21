@@ -1,0 +1,36 @@
+.depoimento__h3 {
+    color: var(--vinho);
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.depoimento__h2 {
+    font-size: 36px;
+    text-align: center;
+    margin-top: 16px;
+}
+
+.depoimento__imagem {
+    text-align: center;
+    margin-top: 32px;
+}
+.depoimento__autor {
+    text-align: center;
+    margin-top: 16px;
+    color: var(--preto);
+}
+.depoimento__cargo {
+    text-align: center;
+    margin: 4px;
+    color: var(--cinza);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.depoimento {
+    background-color: var(--rosinha);
+    border-radius: 16px;
+    padding: 64px;
+    margin: 96px 5vw;
+}

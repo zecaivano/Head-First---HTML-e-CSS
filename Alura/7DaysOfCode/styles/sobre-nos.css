@@ -1,0 +1,31 @@
+.sobre-nos__h3 {
+    font-weight: 600;
+    color: var(--vinho);
+    margin: 6rem auto 1rem auto;
+    text-align: center;
+}
+
+.sobre-nos__h2 {
+    font-size: 48px;
+    font-weight: 600;
+    color: var(--preto);
+    margin: 3rem 20%;
+    text-align: center;
+}
+
+.sobre-nos__descricao {
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--cinza);
+    margin: 0 15%;
+    text-align: center;
+}
+@media screen and (max-width: 910px) {
+    .sobre-nos{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .sobre-nos__descricao {
+        margin-left: 5%;
+    }
+}

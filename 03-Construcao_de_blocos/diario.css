@@ -29,3 +29,46 @@ h2 {
 blockquote {
     font-style: italic;
 }
+
+table {
+    margin: 0 20px;
+    border: thin solid black;
+    caption-side: bottom;
+    border-collapse: collapse;
+}
+
+td, th {
+    border: thin dotted gray;
+    padding: 5px;
+}
+
+th {
+    background-color: #cc6600;
+}
+
+caption {
+    font-style: italic;
+    padding-top: 8px;
+}
+
+.tabela-centro {
+    text-align: center;
+}
+
+.tabela-direita {
+    text-align: right;
+}
+
+.cellcolor {
+    background-color: #fcba7a;
+}
+
+.tabela-aninhada {
+    background-color: white;
+}
+
+li {
+    list-style-image: url(images/backpack.gif);
+    padding-top: 5px;
+    margin-left: 20px;
+}

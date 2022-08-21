@@ -1,26 +1,83 @@
 body {
-    font-family: sans-serif;
+  font: small/1.6rem Verdana, Helvetica, Arial, sans-serif;
 }
 
 h1, h2 {
-    color: gray;
+    color: #007e7e;
   }
   h1 {
-    border-bottom: 1px solid black;
+   font-size: 1.5rem;
   }
 
-  p {
-    color: maroon;
+  h2 {
+    font-size: 1.3rem;
   }
 
-  .greentea {
-    color: green;
+  a:link {
+    color: #007e7e;
   }
 
-  .raspberry {
-    color: blue;
+  a:visited {
+    color: #333333;
   }
 
-  .blueberry {
-    color: purple; 
+#guarantee {
+  border: white 1px dashed;
+  background: url(imagens/background.gif) #a7cece no-repeat top left;
+  color: #444444;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-style: italic;
+  line-height: 1.9em;
+  margin: 30px 370px 30px 30px;
+  padding: 25px 25px 25px 80px;
+}
+
+#elixirs {
+  background: url(imagens/cocktail.gif) repeat-x;
+  border: #007e7e thin solid;
+  float: right;
+  line-height: 1;
+  margin-left: 30px;
+  padding: 0px 20px 20px 20px;
+  text-align: center;
+  width: 300px;
+}
+
+#elixirs h2 {
+  color: black;
+}
+
+#elixirs h3 {
+  color: #d12c47;
+}
+
+#elixirs a:hover {
+  background: #f88396;
+  color: #0d5353;
+}
+
+.cd {
+  font-style: italic;
+}
+
+.artist {
+  font-weight: bold;
+}
+
+#footer {
+  font-size: 50%;
+  text-align: center;
+  line-height: normal;
+  margin-top: 30px;
+}
+
+@media screen and (max-device-width: 480px) {
+  #guarantee {
+    margin-right: 30px;
   }
+}
+@media print {
+  body {
+    font-family: Times, 'Times New Roman', serif;
+  }
+}

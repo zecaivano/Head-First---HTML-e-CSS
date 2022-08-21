@@ -1,0 +1,273 @@
+.body {
+    font-family: Open Sans, sans-serif;
+    margin: 30px;
+}
+
+.cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 5vw;
+}
+
+.cabecalho__img {
+    width: 100px;
+}
+
+.cabecalho__centro{
+    display: flex;
+    justify-content: space-between;
+}
+.cabecalho__centro a{
+    text-decoration: none;
+    color: inherit;
+    margin: 0 20px;
+}
+
+.cabecalho__direita{
+    display: flex;
+    align-items: center;
+}
+.cabecalho__img--perfil {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 100%;
+    background-image: url(./img/perfil-miniatura.jpeg);
+    display: inline-block;
+    height: 55px;
+    width: 55px;
+    margin: 10px;
+}   
+
+.h1--jose {
+    background-color: rgb(17, 89, 167);;
+    padding: 21px 5px;
+    color: white;
+    font-size: 1.4rem;
+    font-weight:900;
+    font-family: Open Sans, sans-serif;
+    letter-spacing: -1.2px;
+}
+.perfil {
+    text-align: center;
+    background-color: #fff;
+    padding: 0 0 35px;
+}
+.perfil:after, .perfil:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+}
+
+.perfil__bloco-avatar {
+    padding: 2rem 0;
+    background: linear-gradient(to bottom, #2A7AE4 calc(100% - 60%), #FFF 0%);
+}
+
+.perfil__avatar {
+    position: relative;
+    display: inline-block;
+}
+
+.perfil__avatar-img {
+    width: 120px;
+    border-radius: 50%;
+    border: 6px solid #2A7AE4;
+}
+
+.perfil__nome {
+    display: block;
+    margin: 30px auto 0;
+    max-width: 580px;
+    font-weight: 700;
+    font-size: 1.44rem;
+    line-height: 1.38em;
+    color: #202024;
+}
+
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+.perfil__biografia, .perfil__categorias {
+    display: block;
+    margin: 15px auto 0;
+    max-width: 600px;
+    width: 96%;
+    text-align: left;
+}
+
+.perfil__bio-titulo, .perfil__categorias__titulo {
+    margin-bottom: 1em;
+    font-size: 1rem;
+    line-height: 22px;
+    color: #343233;
+    font-weight: 700;
+}
+
+.perfil__biografia, .perfil__categorias {
+    display: block;
+    margin: 15px auto 0;
+    max-width: 600px;
+    width: 96%;
+    text-align: left;
+}
+.perfil__categorias__titulo {
+    text-align: left;
+}
+
+.perfil__bio-titulo, .perfil__categorias__titulo {
+    margin-bottom: 1em;
+    font-size: 1rem;
+    line-height: 22px;
+    color: #343233;
+    font-weight: 700;
+}
+.perfil__categorias__bloco{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+
+.perfil__categorias-interesse {
+    text-decoration: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bolder;
+    color: #202024;
+}
+
+.categoria-back {
+    background-color: #00c86f;
+}
+
+.categoria-back:hover {
+    color: #FFF;
+}
+
+.categoria-front {
+    background-color: #6bd1ff;
+}
+.categoria-front:hover {
+    color: #FFF;
+}
+.categoria-data {
+    background-color: #9cd33b;
+}
+.categoria-data:hover {
+    color: #FFF;
+}
+
+.conteudoPrincipal {
+	margin-top: 20px;
+	margin-bottom: 20px;
+    background-color: #32a7e5;
+}
+
+.subtitulo {
+	font-weight: bold;
+	font-size: 32px;
+	margin-bottom: 10px;
+	text-align: center;
+    color: #FFF;
+}
+
+.conteudoPrincipal-sites {
+	display: flex;
+	flex-wrap: wrap;
+	align-content: space-around;
+    width: 100%;
+    box-sizing: content-box;
+}
+
+.conteudoPrincipal__imagens {
+    box-sizing: content-box;
+    width: 200px;
+    margin: 3rem;
+	text-align: center;
+}
+
+.card {
+    display: flex;
+    align-content: space-between;
+    border-radius: 8px;
+    background-color: lightblue;
+    width: 300px;
+    margin: 15px;
+}
+
+.card__descricao {
+    text-align: center;
+    margin: 5px;
+}
+/* PC */
+@media (min-width: 768px) {
+    .cabecalho {
+        margin: 0 10vw;
+    }
+    .h1--jose{
+        padding: 21px 5px 21px 100px;
+    }
+    .container.perfil-biografia {
+        display: flex;
+        padding: 2em 4em;
+    }
+    .perfil .container {
+        width: 96%;
+    }
+    .perfil__bloco-avatar {
+        width: 48%;
+        margin-right: 1rem;
+        border: 1px solid #d7dbdf;
+        padding-bottom: 1rem;
+    }
+    .perfil__bloco-biografia {
+        width: 48%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
+
+/*Mobile*/
+@media (max-width:  768px) {
+    .cabecalho__direita {
+        display: none;
+    }
+
+    .cabecalho__imgs {
+        display: none;
+    }
+
+    .cabecalho__centro {
+        font-size: 0.75rem;
+    }
+    .quemsou__descricao {
+        width: 40vw;
+    }
+
+    .conteudoPrincipal-sites {
+        flex-direction: column;
+        align-items: center;
+    }
+    .conteudoPrincipal__imagens {
+        margin-left: 10vw;
+        margin-right: 1vw;
+        box-sizing: border-box;
+    }
+
+}

@@ -24,6 +24,7 @@ em linha:		Aparecem dentro do fluxo de texto na página.
 <dl></dl>		Definition list. Acompanhada de <dd> e <dt>
 <dt></dt>		Definition title
 <dd></dd>		Definition description
+<div></div>		Cria uma divisão lógica no meu html. Em bloco.
 <em></em>		Coloca ênfase no texto (itálico). Em linha.
 <h1></h1>		Cria um heading principal. Em bloco.
 <h2></h2>		Cria um heading secundário. Em bloco.
@@ -32,6 +33,7 @@ em linha:		Aparecem dentro do fluxo de texto na página.
 <p></p>		Parágrafo. Em bloco.
 <pre></pre>		Browser mostra o texto exatamente como foi digitado, inclusive os Returns.
 <q></q>		Quote, Faz citação(coloca entre aspas). Elemento em linha.
+<span></span>	Div sem quebra de linha. Em linha.
 <ul></ul>		Unordered list. Em bloco.
 
 &lt;			Simboliza < na estrutura do html
@@ -43,12 +45,37 @@ lista completa:	w3 /tags/ref_entities.asp
 CSS
 
 background-color:	Cor do fundo
+	background-image: url(imagens/background.png)
+	background-position: top left;
+	backhround-repeat: no-repeat;
+box-sizing: border-box; /* box sizing serve para garantir que o tamanho será o width, e não o width + padding */
 border-bottom: 1 px solid black	Cria uma linha preta embaixo que vai até o final direito da página
+  border-color: black;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 3px;
 color:		Cor do texto
 font-family: sans-serif		Estilo da fonte
-font-size: 14px;	Tamanho da fonte
-font-weight: bold;	ligther, normal, bolder...
+	font-size: 14px;	Tamanho da fonte
+	font-weight: bold;	ligther, normal, bolder...
+line-height: 1.5rem	Espaçamento entre linhas.
+margin: 2rem		Margem entre a borda e o canto da página/conteúdo de fora
+padding: 2rem		Enchimento entre a borda e o conteúdo
 text-decoration:	underline	overline, none, line-through
+vertical-align: top;	Serve para alinhar os elementos da célula com o topo.
+
+float:	left	- elementos em linha o respeitam
+		right
+position:	absolute - elementos inline o ignoram
+		fixed - travado na tela
+		relative
+		static - padrão
+display:	table
+		table-row
+		table-cell
+
+    overflow: hidden;
+    /* Imagem não vaza do cartão, fica contida. */
 
 @font-face {			Importando fontes.
     font-family: "Emblema One";

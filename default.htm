@@ -1,68 +1,235 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width">
-        <title>Minha Homepage</title>
-        <link href="reset.css" rel="stylesheet">
-        <link href="style.css" rel="stylesheet">
-    </head>
-    <body>
-    <header class="cabecalhoPrincipal">
-        <div class="container__cabecalho">
-            <h1 class="cabecalhoPrincipal-titulo">
-                <a href="#">José Roberto</a>
-            </h1>
-
-            <nav class="cabecalhoPrincipal-nav">
-                <a class="cabecalhoPrincipal-nav-link" href="#">Home</a>
-                <!-- <a class="cabecalhoPrincipal-nav-link" href="#">Cursos</a> -->
-                <a class="cabecalhoPrincipal-nav-link" href="#">Sobre mim</a>
-                <a class="cabecalhoPrincipal-nav-link" href="#">Contato</a>
-                <!-- <a class="cabecalhoPrincipal-nav-link cabecalhoPrincipal-nav-link-app" href="#">Nosso APP</a> -->
-            </nav>
-        </div>
-
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil de José Roberto</title>
+    <link rel="icon" type="image/x-icon" href="imagens/favicon.ico">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./perfil.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <span class="cabecalho__imgs">
+            <img src="img/logo-alura.svg" alt="logo da alura" class="cabecalho__img">
+            <img src="img/unibb.webp" alt="logo da unibb" class="cabecalho__img">
+        </span>
+        <span class="cabecalho__centro">
+            <a href="#conteudoPrincipal">PORTFOLIO</a>
+            <a href="#">CONTEÚDO</a>
+            <a href="#">COMUNIDADE</a>
+        </span>
+        <span class="cabecalho__direita">
+            <span class="cabecalho__img--perfil"></span>
+            JOSE
+        </span>
     </header>
-    <section class="banner">
-        <div class="banner__imagem"></div>
-        <!-- <h2 class="banner__titulo"></h2> -->
-    </section>
-
-        <h1 class="quemsou">QUEM SOU EU</h1>
-        <p class="quemsou__descricao">
-            <img src="imagens/perfil-miniatura.jpeg" alt="foto de perfil">
-            <br>
-            <!-- Bancário engenheiro querendo virar desenvolvedor. Pai de uma menina linda e marido de uma garota encantadora. Apaixonado por matemática, raciocínio lógico, jogos de tabuleiro e animes. Disciplina preferida na faculdade: Eletrônica Digital. Linguagem de programação preferida: Assembly. Prata MG -->
-        </p>
-    	<main class="conteudoPrincipal">
-            <div class="container">
-                <h2 class="subtitulo">Meus Websites</h2>
-                <!-- <p>Websites desenvolvidos que vão crescendo em ordem de complexidade, de acordo com a evolução do meu aprendizado. Os primeiros são bem basicões.</p> -->
-    
-                <nav>
-                    <ul class="conteudoPrincipal-sites">
-                        <li class="conteudoPrincipal-sites-link"><a href="01-Comece_a_entender_o_HTML/index.html"> <img src="imagens/cafe.jpg" alt="Cafe Starbuzz" class="conteudoPrincipal__imagens"></a></li>
-                        <li class="conteudoPrincipal-sites-link"><a href="02-Va_alem_com_o_hipertexto/lounge.html"><img src="imagens/drinks.gif" alt="Drinks" class="conteudoPrincipal__imagens"> </a></li>
-                        <li class="conteudoPrincipal-sites-link"><a href="03-Construcao_de_blocos/diario.html"><img src="imagens/segway1.jpg" alt="Segway" class="conteudoPrincipal__imagens"></a></li>
-                        <li class="conteudoPrincipal-sites-link"><a href="05-Adicione_imagens/index.html"><img src="imagens/mypod.png" alt="myPod" class="conteudoPrincipal__imagens"></a></li>
-                        <li class="conteudoPrincipal-sites-link"><a href="Alura/AluraMidi/index.html"><img src="imagens/aluramidi-mini.jpg" alt="alura midi" class="conteudoPrincipal__imagens"></a></li>
-                        <li class="conteudoPrincipal-sites-link"><a href="Alura/Apeperia/index.html"> <img src="imagens/logo-apeperia.svg" alt="Apeperia" class="conteudoPrincipal__imagens"> </a></li>
-                        <li class="conteudoPrincipal-sites-link"><a href="Alura/Fruta_e_Fruto/index.html"> <img src="imagens/frutaefruto.jpg" alt="fruta e fruto" class="conteudoPrincipal__imagens"></a></li>
-                        <li class="conteudoPrincipal-sites-link"><a href="Alura/Alurinha/index.html"> <img src="imagens/alura.svg" alt="Alura" class="conteudoPrincipal__imagens"></a></li>
-                         <li class="conteudoPrincipal-sites-link"><a href="Cokero/index.html"> <img src="imagens/cokero.jpg" alt="Carvão Cokero" class="conteudoPrincipal__imagens"></a></li>
-                         <li class="conteudoPrincipal-sites-link"><a href="Alura/Alura Store/index.html"><img src="imagens/fortnite.jpg" alt="Fortnite" class="conteudoPrincipal__imagens"></a></li>
-                        <li class="conteudoPrincipal-sites-link"><a href="Alura/Barbearia/index.html"><img src="imagens/logo-branco.png" alt="Barbearia Alura" class="conteudoPrincipal__imagens"> </a></li>
-                        <!-- <li class="conteudoPrincipal-sites-link"><a href="#">Redes de computadores</a></li>
-                        <li class="conteudoPrincipal-sites-link"><a href="#">MySQL</a></li>
-                        <li class="conteudoPrincipal-sites-link"><a href="#">MariaDB</a></li>
-                        <li class="conteudoPrincipal-sites-link"><a href="#">Postegres</a></li>
-                        <li class="conteudoPrincipal-sites-link"><a href="#">Lógica de programação</a></li>
-                        <li class="conteudoPrincipal-sites-link"><a href="#">Lógica de programação</a></li>
-                        <li class="conteudoPrincipal-sites-link"><a href="#">Lógica de programação</a></li> --> -->
-                    </ul>
-                </nav>
+    <main>
+       <h1 class="h1--jose">PERFIL DE JOSÉ ROBERTO VILELA CAIVANO</h1>
+       <section class="perfil">
+            <div class="container perfil-biografia">
+                <div class="perfil__bloco-avatar">
+                    <div class="perfil__avatar">
+                        <img class="perfil__avatar-img" src="img/perfil-miniatura.jpeg" alt="José Roberto Vilela Caivano">
+                    </div>
+                    <h2 class="perfil__nome">José Roberto Vilela Caivano</h2>
+                </div>
+                <div class="perfil__bloco-biografia">
+                    <div class="perfil__biografia">
+                        <p class="perfil__bio-titulo">
+                            Biografia
+                        </p>
+                        <p class="perfil__bio-descricao">
+                            Bancário engenheiro querendo virar desenvolvedor. Pai da Melanie e marido da Nayara.
+                            Apaixonado por matemática, raciocínio lógico, jogos de tabuleiro e animes. Disciplina preferida na faculdade: Eletrônica Digital.<br><br>
+                            Linguagem de programação preferida: Assembly. Prata MG. Cada dia mais especialista no Front-End, mas com um coraçãozinho no Data Science.
+                            Conhecimentos em Javascript, Java, Python e HTML/CSS.
+                        </p>
+                    </div>
+                    <div class="perfil__categorias">
+                        <p class="perfil__categorias__titulo">
+                            Áreas de interesse
+                        </p>
+                        <div class="perfil__categorias__bloco">
+                            <a href="#" class="perfil__categorias-interesse categoria-back">
+                                Programação
+                            </a>
+                            <a href="#" class="perfil__categorias-interesse categoria-front">
+                                Front-end
+                            </a>
+                            <a href="#" class="perfil__categorias-interesse categoria-data">
+                                Data Science
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </main>
-    </body>
+        </section>
+        <section class="conteudoPrincipal">
+            <h2 class="subtitulo">Portfolio Front-end</h2>
+            <!-- <p>Websites desenvolvidos que vão crescendo em ordem de complexidade, de acordo com a evolução do meu aprendizado. Os primeiros são bem basicões.</p> -->
+            <nav>
+                <ul class="conteudoPrincipal-sites">
+                    <div class="card">
+                        <li>
+                            <a class="conteudoPrincipal-sites-link" href="01-Comece_a_entender_o_HTML/index.html"> 
+                                <img src="imagens/headerlogo2.gif" alt="Cafe Starbuzz" class="conteudoPrincipal__imagens">
+                            </a>
+                            <p class="card__descricao">Um dos meus primeiros sites, desenvolvidos no livro HTML Head First. Desktop.</p>
+                        </li>
+                    </div>
+                    <div class="card">
+                        <li>
+                            <a class="conteudoPrincipal-sites-link" href="02-Va_alem_com_o_hipertexto/lounge.html">
+                                <img src="imagens/lounge.gif" alt="Drinks" class="conteudoPrincipal__imagens"> 
+                            </a>
+                            <p class="card__descricao">Meu segundo site, desenvolvido no livro HTML Head First. Responsivo. Melhor no desktop.</p>
+                        </li>
+                    </div>
+                    <div class="card">
+                        <li>
+                            <a class="conteudoPrincipal-sites-link" href="03-Construcao_de_blocos/diario.html">
+                                <img src="imagens/segway1.jpg" alt="Segway" class="conteudoPrincipal__imagens">
+                            </a>
+                            <p class="card__descricao">Meu terceiro site, desenvolvido no livro HTML Head First. Desktop.</p>
+                        </li>
+                    </div>
+                    <div class="card">
+                        <li>
+                            <a class="conteudoPrincipal-sites-link" href="05-Adicione_imagens/index.html">
+                                <img src="imagens/mypod.png" alt="myPod" class="conteudoPrincipal__imagens">
+                            </a>
+                            <p class="card__descricao">Meu quarto site, desenvolvido no livro HTML Head First. Responsivo.</p>
+                        </li>
+                    </div>
+                    <div class="card">  
+                        <li>
+                            <a class="conteudoPrincipal-sites-link" href="Alura/Alura+/index.html">
+                                <img src="imagens/alura+.png" alt="Alura Plus" class="conteudoPrincipal__imagens">
+                        </a>
+                            <p class="card__descricao">Alura+, praticando CSS. Desktop.</p>
+                        </li>
+                    </div> 
+
+                    <div class="card">
+                        <li>
+                            <a class="conteudoPrincipal-sites-link" href="Alura/AluraMidi/index.html">
+                                <img src="imagens/aluramidi-mini.jpg" alt="alura midi" class="conteudoPrincipal__imagens">
+                            </a>
+                            <p class="card__descricao">Site interativo usando Javascript</p>
+                        </li>
+                    </div>
+
+                    <div class="card">
+                        <li>
+                            <a class="conteudoPrincipal-sites-link" href="Alura/Apeperia/index.html"> 
+                                <img src="imagens/logo-apeperia.svg" alt="Apeperia" class="conteudoPrincipal__imagens">
+                            </a>
+                            <p class="card__descricao">Apeperia, site para praticar SEO e Acessibilidade. Responsivo.</p>
+                        </li>
+                    </div>
+                    <div class="card">
+                        <li>
+                            <a class="conteudoPrincipal-sites-link" href="Alura/Fruta_e_Fruto/index.html">
+                                <img src="imagens/frutaefruto.jpg" alt="fruta e fruto" class="conteudoPrincipal__imagens">
+                            </a>
+                            <p class="card__descricao">Site para praticar arquitetura dos arquivos CSS. Responsivo.</p>
+                        </li>
+                    </div>  
+                    <div class="card">
+                        <li>
+                            <a class="conteudoPrincipal-sites-link" href="Alura/Alurinha/index.html"> 
+                                <img src="imagens/alura.svg" alt="Alura" class="conteudoPrincipal__imagens">
+                            </a>
+                            <p class="card__descricao">Alurinha, site para praticar Flexbox. Responsivo.</p>
+                        </li>
+                    </div>     
+                    <div class="card">
+                        <li>
+                            <a class="conteudoPrincipal-sites-link" href="Alura/Alura_Store/index.html">
+                                <img src="imagens/fortnite.jpg" alt="Fortnite" class="conteudoPrincipal__imagens">
+                            </a>
+                            <p class="card__descricao">Fortnite, site para praticar CSS Grid Layout. Responsivo, mais bonito no desktop.</p>
+                        </li>
+                    </div> 
+                    <div class="card">
+                        <li>
+                            <a class="conteudoPrincipal-sites-link" href="Cokero/index.html"> 
+                                <img src="imagens/cokero.jpg" alt="Carvão Cokero" class="conteudoPrincipal__imagens">
+                            </a>
+                            <p class="card__descricao">Carvão Cokero, o melhor. Desktop.</p>
+                        </li>
+                    </div>
+                    <div class="card">
+                        <li>
+                            <a class="conteudoPrincipal-sites-link" href="Alura/Casa-Verde/index.html">
+                                <img src="imagens/logo-casa-verde.svg" alt="Casa-verde" class="conteudoPrincipal__imagens">
+                            </a>
+                            <p class="card__descricao">Trabalhando com componentes no CSS. Mobile</p>
+                        </li>
+                    </div>    
+                    
+                    <div class="card">  
+                        <li>
+                            <a class="conteudoPrincipal-sites-link" href="Alura/HZC/index.html">
+                                <img src="imagens/logoHZC.svg" alt="HZC Videos" class="conteudoPrincipal__imagens">
+                            </a>
+                            <p class="card__descricao">HZC, site com layout moderno. Responsivo.</p>
+                        </li>
+                    </div>
+ 
+                    <div class="card">  
+                        <li>
+                            <a class="conteudoPrincipal-sites-link" href="Alura/AluraBooks/index.html">
+                                <img src="imagens/alurabooks.png" alt="Alura Books" class="conteudoPrincipal__imagens">
+                            </a>
+                            <p class="card__descricao">Alura books, site bem profissional, com utilização de carrossel. Responsivo.</p>
+                        </li>
+                    </div>
+                    <div class="card">
+                        <li>
+                            <a class="conteudoPrincipal-sites-link" href="Alura/Barbearia/index.html">
+                                <img src="imagens/logo-branco.png" alt="Barbearia Alura" class="conteudoPrincipal__imagens">
+                            </a>
+                            <p class="card__descricao">Barbearia Alura: meu primeiro site feito na Alura. Responsivo.</p>
+                        </li>
+                    </div> 
+                    <div class="card">
+                        <li>
+                            <a class="conteudoPrincipal-sites-link" href="Alura/7DaysOfCode/index.html">
+                                <img src="imagens/7Days.svg" alt="Desafio 07 Days of Code" class="conteudoPrincipal__imagens">
+                            </a>
+                            <p class="card__descricao">Optimus Tech, site do desafio 7 dias de código. Desktop.</p>
+                        </li>
+                    </div>
+                    <div class="card">
+                        <li>
+                            <a class="conteudoPrincipal-sites-link" href="Alura/Robotron/index.html">
+                                <img src="imagens/robotron.png" alt="robotron" class="conteudoPrincipal__imagens">
+                            </a>
+                            <p class="card__descricao">Manipulando o DOM com o Robotron. Desktop</p>
+                        </li>
+                    </div>  
+                    <div class="card">
+                        <li>
+                            <a class="conteudoPrincipal-sites-link" href="Alura/Doguito_Pet_Shop/cadastro.html">
+                                <img src="imagens/doguitoadm.svg" alt="Doguito Pet Shop" class="conteudoPrincipal__imagens">
+                            </a>
+                            <p class="card__descricao">Doguito Pet Shop, validando formulários. Responsivo.</p>
+                        </li>
+                    </div>
+                    <div class="card">
+                        <li>
+                            <a class="conteudoPrincipal-sites-link" href="Alura/Alura-Challenge01/index.html" title="Alura Challenge 01">
+                                <img src="imagens/Logo-AluraDev.svg" alt="Alura Dev" class="conteudoPrincipal__imagens">
+                            </a>
+                            <p class="card__descricao">Meu primeiro Alura Challenge. Aprendizado no formato de challenge, sem gabarito ou professor pra me auxiliar. Layout do projeto. Semana 01/ 04.</p>
+                        </li>
+                    </div>                                                         
+                </ul>
+            </nav>
+        </section>
+    </main>
+</body>
 </html>

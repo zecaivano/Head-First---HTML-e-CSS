@@ -1,0 +1,36 @@
+.banner {
+    margin: 10rem 3rem 0 3rem;
+}
+.banner__botao {
+    font-size: 14px;
+    color: var(--vinho);
+    margin: 0 45% 0 43%;
+    background-color: (142, 36, 36, 0.05);
+    border-radius: 16px;
+    border: none;
+    padding: 4px 12px;
+    width: 125px;
+}
+.banner p {
+    text-align: center;
+}
+.banner__titulo {
+    font-size: 36px;
+    font-weight: 600;
+    margin-top: 16px;
+    text-align: center;
+}
+
+.banner__descricao {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    color: var(--cinza);
+}
+
+.banner__imagem {
+    width: 100%;
+    margin-top: 24px;
+}

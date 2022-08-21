@@ -1,0 +1,29 @@
+.vagas {
+    width: 60%;
+    margin: 0 auto;
+}
+.vagas__h3 {
+    font-size: 20px;
+    color: var(--preto);
+    margin-top: 64px;
+}
+
+.vagas__card{
+    margin: 32px auto 24px auto;
+    border: 1px solid;
+    border-color: var(--borda);
+    border-radius: 16px;
+    padding: 24px 24px 28px 24px;
+}
+.titulo-card {
+    font-size: 18px;
+    color: var(--preto);
+}
+.informacoes-card {
+    margin-top: 32px;
+    color: var(--cinza);
+}
+
+.card__salario {
+    margin-left: 24px;
+}

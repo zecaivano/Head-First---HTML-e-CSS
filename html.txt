@@ -81,3 +81,22 @@ display:	table
     font-family: "Emblema One";
     src: url("http://..");
 }
+
+é possível que a proporção das suas imagens não corresponda ao tamanho que você precisa usar para seguir o layout. O que eu gosto de fazer nesses casos é usar uma propriedade do CSS chamada object-fit, passando o valor cover. Assim, a minha imagem se expande para se adequar ao tamanho definido, mas essa expansão não deixa a imagem distorcida, como geralmente acontece quando você só define a altura e largura. Por exemplo:
+
+.publicacao-destaque img {
+   margin-top: .4rem;
+   width: 100%;
+   height: 152px;
+   object-fit: cover;
+}
+
+	  <p>
+            Choose your beans:
+            <select name="beans">
+                <option value="House Blend">House Blend</option>			
+                <option value="Bolivia">Shade Grown Bolivia</option>
+                <option value="Guatemala">Organic Guatemala</option>		//Nesse caso o browser envia ao servidor o valor Guatemala. Organic Guatemala é o valor exibido pelo browser.
+                <option value="Kenya">Kenya</option>
+            </select>
+        </p>

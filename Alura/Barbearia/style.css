@@ -94,12 +94,8 @@ footer{
 	margin-top: 20px;
 }
 
-main {
-
-}
-
 form {
-	margin: 40px 0;
+	margin: 40px;
 }
 
 form label , form legend {
@@ -137,7 +133,7 @@ form label , form legend {
 }
 
 table {
-	margin: 20px 0 40px;
+	margin: 20px 40px;
 }
 
 thead {
@@ -161,7 +157,6 @@ td, th {
 	font-size: 2em;
 	margin: 0 0 1em;
 	clear: left;
-	text-shadow: ;
 }
 
 .principal {

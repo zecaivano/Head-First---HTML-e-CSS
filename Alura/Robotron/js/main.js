@@ -37,7 +37,7 @@ const pecas = {
 controle.forEach ((elemento) => {
     elemento.addEventListener ("click", (evento) => {
         manipulaDados(evento.target.dataset.controle, evento.target.parentNode);
-        atualizaEstatiscas (evento.target.dataset.peca);
+        atualizaEstatiscas (evento.target.dataset.peca, evento.target.dataset.controle);
     })
 })
 
@@ -54,10 +54,16 @@ function manipulaDados(operacao, controle) {
     }
 }
 
-function atualizaEstatiscas (peca) {
-    estatisticas.forEach( (elemento) => {
-        elemento.textContent = parseInt (elemento.textContent) + pecas [peca][elemento.dataset.estatistica];
-    })
+function atualizaEstatiscas (peca, operacao) {
+    if(operacao === '-') {
+        estatisticas.forEach( (elemento) => {
+            elemento.textContent = parseInt (elemento.textContent) - pecas [peca][elemento.dataset.estatistica];
+        })
+    } else if (operacao === '+') {
+        estatisticas.forEach( (elemento) => {
+            elemento.textContent = parseInt (elemento.textContent) + pecas [peca][elemento.dataset.estatistica];
+        })
+    }
 }
     
 function trocaImagem(cor){

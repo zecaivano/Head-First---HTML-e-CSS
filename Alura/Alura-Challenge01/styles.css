@@ -1,5 +1,6 @@
 @import url(styles/cabecalho.css);
 @import url(styles/principal.css);
+@import url(styles/comunidade.css);
 
 :root {
     --azul-fundo: #051D3B;
@@ -10,6 +11,9 @@
     --azul2: #7BA4FC;
     --azul-claro: #96B9FD;
     --branco: #FFFFFF;
+    --branco-hover: #FFFFFF14; 
+    --branco-active: #FFFFFF29;
+    --branco-24: #FFFFFF3D;
     --fundo-editor: #141414;
     --azul-editor: #6BD1FF;
     --rosa-editor: #FF6BCD;
@@ -17,6 +21,8 @@
     --verde-editor: #9AFF6B;
     --azul-escuro-editor: #6B83FF;
     --azul-botao: #5081FB14;
+    --azul-botao2: #5081FB29;
+    --azul-botao3: #5081FB3D;
     --roboto-mono: 'Roboto Mono', monospace;
     --inter: 'Inter', sans-serif;
 }

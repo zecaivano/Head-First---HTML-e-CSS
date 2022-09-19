@@ -1,0 +1,49 @@
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    padding: 9px;
+    background-color: var(--fundo-card);
+}
+
+.navbar-container1 {
+    display: flex;
+}
+
+.navbar-logo {
+    margin-right: 8px;
+}
+
+.navbar-container2 {
+    display: flex;
+    align-items: baseline;
+}
+
+.navbar-subitem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 24px;
+}
+
+.navbar-busca {
+    width: 320px;
+    background-color: var(--input);
+    border-radius: 4px;
+    padding-left: 1rem;
+}
+
+.navbar-busca::placeholder{
+    font-family: var(--fonte-principal);
+    font-size: 14px;
+    font-weight: 400;
+    padding-left: 3rem;
+    color: var(--texto-principal);
+    background: url(../img/busca.svg);
+    background-repeat: no-repeat;
+    background-position: 1em;
+}
+
+.navbar-solucoes {
+    border-left: solid 1px white ;
+    padding-left: 24px;
+}

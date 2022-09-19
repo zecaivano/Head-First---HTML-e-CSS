@@ -1,0 +1,277 @@
+@import url(cabecalho.css);
+
+:root {
+    --fundo-escuro: #000;
+    --fundo-card: #1d2226;
+    --fundo-card-ativo: hsla(0, 0%, 100%, 0.12);
+    --texto-principal: hsla(0, 0%, 100%, 0.9);
+    --texto-secundario: hsla(0, 0%, 100%, 0.6);
+    --texto-escuro: hsla(0, 0%, 0%, 0.75);
+    --input: #38434F;
+    --primario: #70b5f9;
+    --positivo: #3ec786;
+    --fonte: 'Roboto', sans-serif;
+}
+
+*{
+    font-family: 'Roboto', sans-serif;
+    color: var(--texto-principal);
+    font-size: 14px;
+    font-weight: 400;
+}
+body {
+    background-color: var(--fundo-escuro);
+    color: var(--texto-principal);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.capa {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+}
+
+.perfil {
+    border-radius: 50%;
+    width: 160px;
+    position:relative;
+    top: -112px;
+    left: 24px;
+    /* position: absolute;
+    top: 140px;
+    left: 175px; */
+}
+
+
+.card__imagens {
+    margin-bottom: -100px;
+}
+.card__info {
+    padding: 0 24px 24px 24px;
+    /* position: relative;
+    top: -100px; */
+}
+
+.card__nome {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 30px;
+}
+.card__habilidades {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    margin: 4px 0;
+}
+.card__h3 {
+    color: var(--texto-secundario);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+}
+.card__container {
+    display: flex;
+    margin: 4px 0px;
+}
+.card__contato {
+    margin-left: 16px;
+}
+.card__contato-link {
+    text-decoration: none;
+    font-weight: 700;
+    color: var(--primario);
+    text-transform: lowercase;
+}
+.card__seguidores {
+    font-weight: 500;
+    color: var(--primario);
+    text-transform: lowercase;
+
+}
+.card__botao {
+    border: 1px solid var(--primario);
+    border-radius: 16px;
+    padding: 6px 29px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    margin-top: 4px;
+}
+
+.card__mensagem {
+    background-color: var(--primario);
+    color: var(--texto-escuro);
+}
+
+.botao__aside {
+    background-color: inherit;
+    border: 1px solid var(--texto-principal);
+    border-radius: 16px;
+    color: #FFFFFF;
+    font-weight: 700;
+    padding: 7px 16px;
+    margin-left: 50px;
+}
+.card__mais {
+    background-color: inherit;
+    color: var(--primario);
+    margin-left: 7px;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container__empresa {
+    display: flex;
+    flex-direction: column;
+    margin-right: 87px;
+}
+
+.wrapper__empresa {
+    display: flex;
+    align-items: center;
+}
+.card__empresa{
+    margin: 8px;
+}
+
+.destaques {
+    font-weight: 600;
+    font-size: 20px;
+}
+.destaques__container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.card__destaques {
+    padding: 16px 24px;
+    margin-top: 8px;
+}
+
+.minicard {
+    border: 1px solid #FFFFFF99;
+    border-radius: 8px;
+}
+
+.publicacao {
+    color: var(--texto-secundario);
+    font-size: 12px;
+    font-weight: 400;
+    margin: 12px 0 0 14px;
+}
+.publicacao-destaque {
+    margin-top: 4px;
+    width: 236px;
+    height: 152px;
+}
+.legenda {
+    margin-left: 14px;
+}
+
+.reacoes {
+    display: flex;
+    justify-content: space-between;
+    margin: 4px 6px;
+}
+
+.reacoes span, .reacoes p {
+    color: var(--texto-secundario);
+    margin-left: 4px;
+}
+.publicacao-destaque {
+    border: none;
+}
+.reacoes-container {
+    display: flex;
+    align-items: center;
+}
+.container__atividade {
+
+    justify-content: space-between;
+    margin-top: 8px;
+}
+.atividade-descricao {
+    text-align: justify;
+    margin-left: 8px;
+}
+.publicou {
+    margin-top: 13px;
+}
+.reacoes2 {
+    padding: 10px 0px;
+    border-bottom: 1px solid #ffffff99;
+}
+
+.exibir-atividades {
+    font-weight: 500;
+    color: var(--texto-secundario);
+    text-align: center;
+    margin-top: 8px;
+}
+
+.sobre-descricao {
+    text-align: justify;
+    margin-top: 8px;
+}
+
+.experiencias__empresa {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    margin-top: 10px;
+}
+
+.cargo{
+    margin-left: 70px;
+}
+
+.timeline {
+    margin: 0 28px;
+}
+
+.soblinha {
+    border-bottom: 1px solid #ffffff99;
+    padding: 0 57px 12px 0;
+}
+
+.card {
+    background-color: var(--fundo-card);
+    border-radius: 16px;
+    margin:24px 32px 8px 0px;
+}
+
+.left {
+    margin-left: 100px;
+    margin-right: 32px;
+    width: 800px;
+}
+
+.direita{
+    width: 300px;
+    float: right;
+    margin-right: 70px;
+    padding: 16px;
+}
+
+.aside {
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.nome-perfil {
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.perfil-descricao {
+    color: var(--texto-secundario);
+    font-size: 12px;
+}
+
+.layout-container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+}

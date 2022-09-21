@@ -243,15 +243,14 @@ body {
 }
 
 .left {
-    margin-left: 100px;
+    margin-left: 150px;
     margin-right: 32px;
-    width: 800px;
+    width: 850px;
 }
 
 .direita{
     width: 300px;
-    float: right;
-    margin-right: 70px;
+    margin-right: 80px;
     padding: 16px;
 }
 

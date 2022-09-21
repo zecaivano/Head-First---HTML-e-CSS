@@ -49,7 +49,7 @@ CSS
 background-color:	Cor do fundo
 	background-image: url(imagens/background.png)
 	background-position: top left;
-	backhround-repeat: no-repeat;
+	background-repeat: no-repeat;
 	background-size: cover;
 box-sizing: border-box; /* box sizing serve para garantir que o tamanho será o width, e não o width + padding */
 border-bottom: 1 px solid black	Cria uma linha preta embaixo que vai até o final direito da página

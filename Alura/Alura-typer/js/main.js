@@ -6,6 +6,7 @@ $(function () {       //Depois que meu html carregar inteiro eu executo essa fun
     iniciaContadores();
     iniciaCronometro();
     coloreBordas();
+    bloqueiaColar();
     $("#botao-reiniciar").click(reiniciaJogo);
 })
 
@@ -82,3 +83,11 @@ function reiniciaJogo() {
     campo.removeClass("borda-verde");
 }
 
+
+function bloqueiaColar(){
+    var bloqueiaColar = document.querySelector(".campo-digitacao");
+
+    bloqueiaColar.addEventListener("paste", function(event) {
+        event.preventDefault();
+    });
+}
